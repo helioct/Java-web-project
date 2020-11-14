@@ -1,6 +1,5 @@
 function createProduct(){ 
     
-    let product_id = document.querySelector('#product_id'); 
     let description = document.querySelector('#description');
     let price = document.querySelector('#price');
     let category_id = document.querySelector('#category_id');
@@ -29,7 +28,7 @@ function createProduct(){
         if (xhr_1.readyState === 4 && xhr_1.status === 200) { 
 
             let categoria = JSON.parse(this.responseText);
-            var data = JSON.stringify({ "id_productos": product_id.value, "descripcion": description.value, "precio": price.value, categoria,
+            var data = JSON.stringify({"descripcion": description.value, "precio": price.value, categoria,
                                  "existencia": stock.value, "image_url" : image_name }); 
             xhr.send(data); 
         } 
