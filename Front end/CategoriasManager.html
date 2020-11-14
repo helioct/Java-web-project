@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title> 
+            Book categories manager
+        </title>
+    </head>
+    <body style="text-align:center;" id="body">
+        <h1 style="color:green;"> 
+            Categories manager 
+        </h1>
+        <p style="color:green;" > 
+            Create new category<br>
+            <input type="text" id="category_id" placeholder="Category id"> 
+            <input type="text" id="description" placeholder="Description">
+            <button onclick="createCat()">Create</button> 
+        </p>
+        <p style="color:green;">View categories</p>
+        <button onclick="showAllCats()">View all</button><br><br>
+        <div id="table"></div>
+        
+        <p style="color:green;" > 
+            Search category by id<br>
+            <input type="text" id="category_id2search" placeholder="Category id">
+            <button onclick="searchCatById()">Search</button> 
+        </p>
+        <div id="table2"> </div>
+        <p style="color:green;" > 
+            Update category<br>
+            <input type="text" id="category_id2update" placeholder="Category id">
+            <input type="text" id="description2update" placeholder="Description">
+            <button onclick="updateCat()">Update</button> 
+        </p>
+        <p style="color:green;" > 
+            Delete category<br>
+            <input type="text" id="category_id2delete" placeholder="Category id">
+            <button onclick="deleteCat()">Delete</button> 
+        </p>
+
+        <script src="index.js"></script>
+    </body>
+</html>

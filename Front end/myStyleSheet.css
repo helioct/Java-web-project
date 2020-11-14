@@ -1,0 +1,24 @@
+
+/*CSS Styles for login webpage*/
+body {
+    background-image: url("bg.jpg");
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+}
+
+
+  div.centre{
+    width: 450px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color:white;
+  }
+
+
+/*CSS Styles for User Main webpage*/
+

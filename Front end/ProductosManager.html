@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title> 
+            Products manager
+        </title>
+    </head>
+    <body style="text-align:center;" id="body">
+
+
+        <h1 style="color:green;"> 
+            Products manager 
+        </h1>
+        <p style="color:green;" > 
+            Create new product<br>
+            <input type="number" id="product_id" placeholder="Product id"><br>
+            <input type="text" id="description" placeholder="Description"><br>
+            <input type="number" id="price" placeholder="Price"><br>
+            <input type="number" id="category_id" placeholder="Category id"><br>
+            <input type="number" id="stock" placeholder="Stock"><br>
+            <input type="file" id="image_path" placeholder="Image"><br>
+            <button onclick="createProduct()">Create</button>
+            
+        </p>
+
+
+        <p style="color:green;">View products</p>
+        <button onclick="showAllProducts()">View all</button><br><br>
+        <div id="table" style="margin-left: auto; margin-right: auto;" border="1">	</div>
+        
+
+        <p style="color:green;" > 
+            Search product by id<br>
+            <input type="text" id="product_id2search" placeholder="Category id">
+            <button onclick="searchProductById()">Search</button> 
+        </p>
+        <div id="table1" style="margin-left: auto; margin-right: auto;" border="1">	</div>
+
+
+        <p style="color:green;" > 
+            Update product<br>
+            <input type="number" id="product_id2update" placeholder="Product id"><br>
+            <input type="text" id="description2update" placeholder="Description"><br>
+            <input type="number" id="price2update" placeholder="Price"><br>
+            <input type="number" id="category_id2update" placeholder="Category id"><br>
+            <input type="number" id="stock2update" placeholder="Stock"><br>
+            <input type="file" id="image_path2update" placeholder="Image"><br>
+            <button onclick="updateProduct()">Update</button>
+            
+        </p>
+
+
+        <p style="color:green;" > 
+            Delete product<br>
+            <input type="text" id="product_id2delete" placeholder="Product id">
+            <button onclick="deleteProduct()">Delete</button> 
+        </p>
+
+        <p style="color:green;" > 
+            Delete product from inventory<br>
+            <input type="text" id="product_id2remove" placeholder="Product id">
+            <button onclick="deleteProductStock()">Delete</button> 
+        </p>
+
+        <script src="productsManager.js"></script>
+
+    </body>
+</html>
