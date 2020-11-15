@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+    <head><title>New user</title></head>
+    <body style="text-align:center;" id="body">
+        <h1 style="color:green;">Register</h1>
+        <p style="color:green;" >Create new user<br></p>
+            <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input type="text" id="name" placeholder="First name"></td>
+                </tr>
+                <tr>
+                    <td><label>Last name</label></td>
+                    <td><input type="text" id="lastName" placeholder="Last name"></td>
+                </tr>
+                <tr>
+                    <td><label>E-mail</label></td>
+                    <td> <input type="email" id="email" placeholder="E-mail"></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" id="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td><label>Type of user</label></td>
+                    <td><input type="radio" name="userType" checked="checked" value=1>Customer</input></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="userType" value=0>Administrator</input></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick="createUser()">Create</button></td>
+                </tr>
+            </table>        
+        <script src="usersManagement.js"></script>
+    </body>
+</html>
